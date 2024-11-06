@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome Page</title>
+
+    <style>
+        /* General reset and styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Main Container */
+        .container {
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            color: white;
+            border-radius: 10px;
+            padding: 50px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* Text */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Button */
+        .btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 12px 30px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #d500f9;
+            transform: translateY(-3px);
+        }
+
+        /* Image */
+        .logo {
+            width: 150px;
+            margin-bottom: 30px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .footer a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Logo Image -->
+        <img src="https://via.placeholder.com/150" alt="Logo" class="logo">
+
+        <!-- Welcome Title -->
+        <h1>Welcome to Our Website!</h1>
+
+        <!-- Description Paragraph -->
+        <p>We're excited to have you here. Explore our features, learn more about what we offer, and enjoy your stay!</p>
+
+        <!-- Call to Action Button -->
+        <a href="#" class="btn">Get Started</a>
+
+        <!-- Footer with Link -->
+        <div class="footer">
+            <p>Need help? <a href="#">Contact Us</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
